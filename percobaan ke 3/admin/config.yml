@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: mamanhulawa23-alt/website-desa-dungaliyo
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: img
+
+collections:
+  - name: berita
+    label: Berita Desa
+    folder: _berita
+    create: true
+    fields:
+      - { label: Judul, name: title, widget: string }
+      - { label: Tanggal, name: date, widget: datetime }
+      - { label: Isi Berita, name: body, widget: markdown }
+      - { label: Foto, name: image, widget: image, required: false }
