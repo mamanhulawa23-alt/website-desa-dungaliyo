@@ -1,0 +1,517 @@
+/* =====================================================
+   WEBSITE DESA - TEMA BIRU NAVY MODERN
+   Clean, Elegant, Responsive
+   ===================================================== */
+
+/* ---------- ROOT COLORS ---------- */
+:root {
+    --navy-dark: #0D47A1;
+    --blue-main: #1E88E5;
+    --blue-soft: #42A5F5;
+    --blue-accent: #90CAF9;
+    --soft-bg: #F2F6FC;
+    --white: #ffffff;
+    --gray-text: #555;
+}
+
+/* ---------- GLOBAL STYLE ---------- */
+body {
+    margin: 0;
+    background: var(--soft-bg);
+    font-family: Arial, sans-serif;
+    color: var(--gray-text);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ---------- TOPBAR ---------- */
+.topbar {
+    background: var(--navy-dark);
+    color: var(--white);
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.topbar .icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ---------- HEADER (LOGO + POLYGON BG) ---------- */
+.header {
+    position: relative;
+    background: linear-gradient(120deg, var(--navy-dark), var(--blue-main));
+    padding: 30px 0;
+    color: white;
+    overflow: hidden;
+}
+
+.polygon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("[velocitydeveloper.com](https://velocitydeveloper.com/wp-content/uploads/2021/12/bg-header-velocity.svg)");
+    background-size: cover;
+    opacity: 0.25;
+}
+
+.header-flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-title p {
+    margin: 5px 0 0 0;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: var(--blue-main);
+    border-bottom: 3px solid var(--navy-dark);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 12px;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 4px;
+}
+
+.navbar a:hover {
+    color: var(--blue-accent);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 30px;
+    width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: var(--gray-text);
+    font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--blue-accent);
+    color: white;
+}
+
+/* ---------- MAIN GRID (3 kolom) ---------- */
+.main {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr 260px;
+    gap: 20px;
+}
+
+/* ---------- SIDEBAR KIRI ---------- */
+.side-left {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 15px;
+    border: 2px solid var(--blue-accent);
+}
+
+.side-card {
+    text-align: center;
+}
+
+.side-logo {
+    width: 90px;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.menu-button button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid var(--blue-accent);
+    background: var(--blue-soft);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-button button:hover {
+    background: var(--navy-dark);
+}
+
+/* ---------- KONTEN TENGAH ---------- */
+.content {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--blue-accent);
+}
+
+.content h2 {
+    margin-top: 0;
+    color: var(--navy-dark);
+    border-left: 6px solid var(--blue-main);
+    padding-left: 10px;
+}
+
+/* ---------- SIDEBAR KANAN ---------- */
+.side-right {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--blue-accent);
+}
+
+.jam-title {
+    background: var(--blue-main);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 0 0 10px 0;
+}
+
+.jam-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.jam-table td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.libur {
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    background: var(--navy-dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+/* ---------- WHATSAPP FLOAT ---------- */
+.wa-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 12px 18px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+.wa-btn:hover {
+    background: #128C7E;
+}
+
+/* ---------- RESPONSIVE MODE ---------- */
+@media(max-width: 992px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .side-left, .side-right {
+        order: 2;
+    }
+    .content {
+        order: 1;
+    }
+}
+
+@media(max-width: 600px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .header-title h1 {
+        font-size: 22px;
+    }
+}
+/* Transisi halus dropdown */
+.dropdown-menu {
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+.sub-title-profil {
+    margin-top: 25px;
+    color: var(--navy-dark);
+    font-size: 20px;
+    border-left: 5px solid var(--blue-main);
+    padding-left: 10px;
+}
+
+.profil-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.profil-table td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #ddd;
+}
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: none;
+}
+.slider img.active {
+    display: block;
+}
+
+/* LAYANAN GRID */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+.service-card {
+    background: var(--blue-soft);
+    padding: 18px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.service-card:hover {
+    background: var(--navy-dark);
+}
+
+/* BERITA LIST */
+.home-subtitle {
+    margin-top: 30px;
+    border-left: 5px solid var(--blue-main);
+    padding-left: 8px;
+    color: var(--navy-dark);
+}
+.news-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.news-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--blue-accent);
+}
+.news-card a {
+    color: var(--blue-main);
+    text-decoration: none;
+}
+/* LIST BERITA */
+.news-list-page {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.news-item {
+    background: var(--white);
+    border: 1px solid var(--blue-accent);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    gap: 15px;
+}
+
+.news-thumb {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.news-info h3 {
+    margin: 0;
+}
+
+.news-info a {
+    text-decoration: none;
+    color: var(--navy-dark);
+}
+
+.news-btn {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--blue-main);
+    font-weight: bold;
+}
+.detail-img {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--blue-main);
+    text-decoration: none;
+    font-weight: bold;
+}
+/* GALERI GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+.gallery-grid img {
+    height: 220px;
+}
+.map-box {
+    margin: 10px 0 25px;
+    border: 2px solid var(--blue-accent);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--blue-accent);
+    border-radius: 6px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: var(--blue-main);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: var(--navy-dark);
+}

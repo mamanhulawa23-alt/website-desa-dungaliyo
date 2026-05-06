@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Desa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <span id="tanggal"></span>
+
+            <div class="topbar-menu">
+                <input type="text" placeholder="Cari artikel..." class="search-input">
+                <span class="icon">🔍</span>
+                <span class="icon">🏠</span>
+                <span class="icon">👤</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="polygon-bg"></div>
+
+        <div class="container header-flex">
+            <img src="img/logo.png" class="logo">
+            <div class="header-title">
+                <h1>DESA NAMA DESA</h1>
+                <p>Kecamatan X • Kabupaten Y • Provinsi Z</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+           <li><a href="profil.html">Profil</a></li>
+
+
+            <li><a href="pemerintahan.html">Pemerintahan</a></li>
+            <li><a href="kelembagaan.html">Kelembagaan</a></li>
+            <li><a class="active" href="data-desa.html">Data Desa</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="transparansi anggaran.html">transparansi-anggaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- GRID UTAMA -->
+    <div class="main">
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="side-left">
+            <div class="side-card">
+                <img src="img/logo.png" class="side-logo">
+                <h3>PEMERINTAH DESA</h3>
+                <p>Nama Kecamatan</p>
+                <p>Nama Kabupaten</p>
+            </div>
+
+            <div class="menu-button">
+                <button onclick="location.href='index.html'">🏠 Beranda</button>
+                <button onclick="location.href='profil.html'">📄 Profil Desa</button>
+                <button onclick="location.href='pemerintahan.html'">👥 Pemerintahan</button>
+                <button onclick="location.href='data-desa.html'">📊 Data Desa</button>
+                <button onclick="location.href='berita.html'">📰 Berita</button>
+                <button onclick="location.href='galeri.html'">🖼️ Galeri</button>
+            </div>
+        </aside>
+
+        <!-- KONTEN TENGAH – DATA DESA -->
+        <section class="content">
+            <h2>Data Desa</h2>
+
+            <p>
+                Data berikut merupakan gambaran umum mengenai kondisi penduduk Desa NAMA DESA.
+                Semua angka bisa kamu isi sesuai data desa kamu.
+            </p>
+
+            <!-- DATA PENDUDUK -->
+            <h3 class="sub-title-profil">Data Penduduk</h3>
+            <table class="profil-table">
+                <tr><td>Jumlah Penduduk</td><td>:</td><td>...</td></tr>
+                <tr><td>Laki-laki</td><td>:</td><td>...</td></tr>
+                <tr><td>Perempuan</td><td>:</td><td>...</td></tr>
+                <tr><td>Jumlah KK</td><td>:</td><td>...</td></tr>
+            </table>
+
+            <!-- DATA PENDIDIKAN -->
+            <h3 class="sub-title-profil">Pendidikan</h3>
+            <table class="profil-table">
+                <tr><td>Tidak sekolah</td><td>:</td><td>...</td></tr>
+                <tr><td>SD / MI</td><td>:</td><td>...</td></tr>
+                <tr><td>SMP / MTs</td><td>:</td><td>...</td></tr>
+                <tr><td>SMA / SMK / MA</td><td>:</td><td>...</td></tr>
+                <tr><td>D1 - D3</td><td>:</td><td>...</td></tr>
+                <tr><td>S1</td><td>:</td><td>...</td></tr>
+                <tr><td>S2 / S3</td><td>:</td><td>...</td></tr>
+            </table>
+
+            <!-- PEKERJAAN -->
+            <h3 class="sub-title-profil">Pekerjaan Penduduk</h3>
+            <table class="profil-table">
+                <tr><td>Petani</td><td>:</td><td>...</td></tr>
+                <tr><td>Nelayan</td><td>:</td><td>...</td></tr>
+                <tr><td>Karyawan Swasta</td><td>:</td><td>...</td></tr>
+                <tr><td>PNS</td><td>:</td><td>...</td></tr>
+                <tr><td>Guru</td><td>:</td><td>...</td></tr>
+                <tr><td>Pedagang</td><td>:</td><td>...</td></tr>
+                <tr><td>Usaha Mikro/UMKM</td><td>:</td><td>...</td></tr>
+                <tr><td>Pekerjaan Lainnya</td><td>:</td><td>...</td></tr>
+            </table>
+
+            <!-- AGAMA -->
+            <h3 class="sub-title-profil">Agama</h3>
+            <table class="profil-table">
+                <tr><td>Islam</td><td>:</td><td>...</td></tr>
+                <tr><td>Kristen</td><td>:</td><td>...</td></tr>
+                <tr><td>Katolik</td><td>:</td><td>...</td></tr>
+                <tr><td>Hindu</td><td>:</td><td>...</td></tr>
+                <tr><td>Buddha</td><td>:</td><td>...</td></tr>
+                <tr><td>Konghucu</td><td>:</td><td>...</td></tr>
+            </table>
+
+            <!-- KELOMPOK UMUR -->
+            <h3 class="sub-title-profil">Kelompok Umur</h3>
+            <table class="profil-table">
+                <tr><td>Balita (0–5 tahun)</td><td>:</td><td>...</td></tr>
+                <tr><td>Anak-anak (6–12 tahun)</td><td>:</td><td>...</td></tr>
+                <tr><td>Remaja (13–17 tahun)</td><td>:</td><td>...</td></tr>
+                <tr><td>Dewasa (18–59 tahun)</td><td>:</td><td>...</td></tr>
+                <tr><td>Lansia (60+ tahun)</td><td>:</td><td>...</td></tr>
+            </table>
+
+            <!-- DATA WILAYAH ADMINISTRASI -->
+            <h3 class="sub-title-profil">Wilayah Administratif</h3>
+            <table class="profil-table">
+                <tr><td>Jumlah Dusun</td><td>:</td><td>...</td></tr>
+                <tr><td>Jumlah RW</td><td>:</td><td>...</td></tr>
+                <tr><td>Jumlah RT</td><td>:</td><td>...</td></tr>
+            </table>
+
+        </section>
+
+        <!-- SIDEBAR KANAN -->
+        <aside class="side-right">
+            <h3 class="jam-title">Jam Kerja</h3>
+
+            <table class="jam-table">
+                <tr><td>Senin</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Selasa</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Rabu</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Kamis</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Jumat</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Sabtu</td><td colspan="2" class="libur">LIBUR</td></tr>
+                <tr><td>Minggu</td><td colspan="2" class="libur">LIBUR</td></tr>
+            </table>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Pemerintah Desa NAMA DESA</p>
+    </footer>
+
+    <!-- WA BUTTON -->
+    <a href="[wa.me](https://wa.me/62xxxxxxxx)" class="wa-btn">💬 Bantuan?</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

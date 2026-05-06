@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Desa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <span id="tanggal"></span>
+            <div class="topbar-menu">
+                <input type="text" placeholder="Cari artikel..." class="search-input">
+                <span class="icon">🔍</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="polygon-bg"></div>
+        <div class="container header-flex">
+            <img src="img/logo.png" class="logo">
+            <div class="header-title">
+                <h1>DESA NAMA DESA</h1>
+                <p>Kecamatan X • Kabupaten Y • Provinsi Z</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="pemerintahan.html">Pemerintahan</a></li>
+            <li><a href="kelembagaan.html">Kelembagaan</a></li>
+            <li><a href="data-desa.html">Data Desa</a></li>
+            <li><a class="active" href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="transparansi anggaran.html">transparansi-anggaran/a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- GRID -->
+    <div class="main">
+
+        <!-- SIDE LEFT -->
+        <aside class="side-left">
+            <div class="side-card">
+                <img src="img/logo.png" class="side-logo">
+                <h3>PEMERINTAH DESA</h3>
+                <p>Nama Kecamatan</p>
+                <p>Nama Kabupaten</p>
+            </div>
+
+            <div class="menu-button">
+                <button onclick="location.href='index.html'">🏠 Beranda</button>
+                <button onclick="location.href='profil.html'">📄 Profil Desa</button>
+                <button onclick="location.href='pemerintahan.html'">👥 Pemerintahan</button>
+                <button onclick="location.href='data-desa.html'">📊 Data Desa</button>
+                <button onclick="location.href='berita.html'">📰 Berita Desa</button>
+                <button onclick="location.href='galeri.html'">🖼️ Galeri</button>
+            </div>
+        </aside>
+
+        <!-- CONTENT – LIST BERITA -->
+        <section class="content">
+
+            <h2>Berita Desa</h2>
+            <p>Berikut daftar berita terbaru dari Desa NAMA DESA.</p>
+
+            <!-- LIST WRAPPER -->
+            <div class="news-list-page">
+
+                <!-- NEWS ITEM 1 -->
+                <div class="news-item">
+                    <img src="img/slide1.jpg" class="news-thumb">
+                    <div class="news-info">
+                        <h3><a href="berita-detail.html">Judul Berita Desa 1</a></h3>
+                        <span class="tgl">Dipublikasikan: 12 April 2026</span>
+                        <p>Ringkasan singkat berita ditampilkan di sini...</p>
+                        <a class="news-btn" href="berita-detail.html">Baca selengkapnya →</a>
+                    </div>
+                </div>
+
+                <!-- NEWS ITEM 2 -->
+                <div class="news-item">
+                    <img src="img/slide2.jpg" class="news-thumb">
+                    <div class="news-info">
+                        <h3><a href="berita-detail.html">Judul Berita Desa 2</a></h3>
+                        <span class="tgl">Dipublikasikan: 05 April 2026</span>
+                        <p>Isi ringkasan berita bisa diganti sesuai kebutuhan.</p>
+                        <a class="news-btn" href="berita-detail.html">Baca selengkapnya →</a>
+                    </div>
+                </div>
+
+                <!-- NEWS ITEM 3 -->
+                <div class="news-item">
+                    <img src="img/slide3.jpg" class="news-thumb">
+                    <div class="news-info">
+                        <h3><a href="berita-detail.html">Judul Berita Desa 3</a></h3>
+                        <span class="tgl">Dipublikasikan: 28 Maret 2026</span>
+                        <p>Ringkasan deskripsi berita desa.</p>
+                        <a class="news-btn" href="berita-detail.html">Baca selengkapnya →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SIDE RIGHT -->
+        <aside class="side-right">
+            <h3 class="jam-title">Jam Kerja</h3>
+            <table class="jam-table">
+                <tr><td>Senin</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Selasa</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Rabu</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Kamis</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Jumat</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Sabtu</td><td colspan="2" class="libur">LIBUR</td></tr>
+                <tr><td>Minggu</td><td colspan="2" class="libur">LIBUR</td></tr>
+            </table>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Pemerintah Desa NAMA DESA</p>
+    </footer>
+
+    <a href="[wa.me](https://wa.me/62xxxxxxxx)" class="wa-btn">💬 Bantuan?</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

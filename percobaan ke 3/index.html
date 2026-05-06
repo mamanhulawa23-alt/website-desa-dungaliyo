@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Website Desa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <span id="tanggal"></span>
+
+            <div class="topbar-menu">
+                <input type="text" placeholder="Cari artikel..." class="search-input">
+                <span class="icon">🔍</span>
+                <span class="icon">🏠</span>
+                <span class="icon">👤</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="polygon-bg"></div>
+
+        <div class="container header-flex">
+            <img src="img/logo.png" class="logo">
+            <div class="header-title">
+                <h1>DUNGALIYO</h1>
+                <p>Kecamatan Dungaliyo • Kabupaten Dungaliyo • Provinsi Gorontalo</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="profil.html">Profil</a></li>
+
+
+            <li><a href="pemerintahan.html">Pemerintahan</a></li>
+            <li><a href="kelembagaan.html">Kelembagaan</a></li>
+            <li><a href="data-desa.html">Data Desa</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="transparansi anggaran.html">Transpatansi Anggaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- GRID UTAMA -->
+    <div class="main">
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="side-left">
+            <div class="side-card">
+                <img src="img/logo.png" class="side-logo">
+                <h3>PEMERINTAH DESA DUNGALIYO</h3>
+                <p>Kecamatan Dungaliyo</p>
+                <p>Kabupaten Gorontalo</p>
+            </div>
+
+            <div class="menu-button">
+                <button onclick="location.href='profil.html'">📄 Profil Desa</button>
+                <button onclick="location.href='pemerintahan.html'">👥 Pemerintahan</button>
+                <button onclick="location.href='data-desa.html'">📊 Data Desa</button>
+                <button onclick="location.href='berita.html'">📰 Berita</button>
+                <button onclick="location.href='galeri.html'">🖼️ Galeri</button>
+                <button onclick="location.href='transparansi-anggaran.html'">📬 Aspirasi</button>
+            </div>
+        </aside>
+
+        <!-- KONTEN TENGAH (BERANDA) -->
+        <section class="content">
+
+            <!-- SLIDER -->
+            <div class="slider">
+                <img src="img/slide1.jpg" class="slide active">
+                <img src="img/slide2.jpeg" class="slide">
+                <img src="img/slide3.jpeg" class="slide">
+            </div>
+
+            <!-- SELAMAT DATANG -->
+            <h2>SELAMAT DATANG DI WEBSITE RESMI DESA</h2>
+            <p>
+                Website ini menyajikan informasi mengenai pemerintahan, pelayanan publik,
+                berita desa, agenda, dan potensi Desa Dungaliyo.
+            </p>
+
+            <!-- KARTU LAYANAN -->
+            <div class="service-grid">
+                <div class="service-card">📄 Profil Desa</div>
+                <div class="service-card">👥 Pemerintahan</div>
+                <div class="service-card">📊 Data Desa</div>
+                <div class="service-card">📰 Berita</div>
+                <div class="service-card">🖼️ Galeri</div>
+                <div class="service-card">📬 Aspirasi</div>
+            </div>
+
+            <!-- BERITA TERBARU -->
+            <h3 class="home-subtitle">Berita Terbaru</h3>
+
+            <div class="news-list">
+                <div class="news-card">
+                    <h4>Semarak Posyandu Nasional Digelar di Kantor Desa Dungaliyo</h4>
+                    <p>Ringkasan singkat berita desa...</p>
+                    <a href="berita.html">Baca selengkapnya</a>
+                </div>
+
+                <div class="news-card">
+                    <h4>Judul Berita 2</h4>
+                    <p>Dungaliyo, 29 April 2026 — Pemerintah Desa Dungaliyo melaksanakan kegiatan Semarak Posyandu Nasional pada hari Rabu, 29 April 2026, bertempat di Kantor Desa Dungaliyo. Kegiatan ini berlangsung dengan penuh antusias dan dihadiri oleh kader posyandu, tenaga kesehatan, aparat desa, serta masyarakat, khususnya ibu dan balita.</p>
+                    <a href="berita.html">Baca selengkapnya</a>
+                </div>
+
+                <div class="news-card">
+                    <h4>Judul Berita 3</h4>
+                    <p>Ringkasan singkat berita desa...</p>
+                    <a href="berita.html">Baca selengkapnya</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SIDEBAR KANAN (JAM KERJA) -->
+        <aside class="side-right">
+            <h3 class="jam-title">Jam Kerja</h3>
+
+            <table class="jam-table">
+                <tr><td>Senin</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Selasa</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Rabu</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Kamis</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Jumat</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Sabtu</td><td colspan="2" class="libur">LIBUR</td></tr>
+                <tr><td>Minggu</td><td colspan="2" class="libur">LIBUR</td></tr>
+            </table>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Pemerintah Desa NAMA DESA</p>
+    </footer>
+
+    <!-- WA BUTTON -->
+    <a href="[wa.me](https://wa.me/62xxxxxxxxx)" class="wa-btn">💬 Bantuan?</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

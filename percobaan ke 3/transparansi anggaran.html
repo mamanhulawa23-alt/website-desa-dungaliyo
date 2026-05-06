@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparansi Anggaran Desa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <span id="tanggal"></span>
+
+            <div class="topbar-menu">
+                <input type="text" placeholder="Cari data anggaran..." class="search-input">
+                <span class="icon">🔍</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="polygon-bg"></div>
+        <div class="container header-flex">
+            <img src="img/logo.png" class="logo">
+            <div class="header-title">
+                <h1>DESA NAMA DESA</h1>
+                <p>Kecamatan X • Kabupaten Y • Provinsi Z</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="profil.html">Profil</a></li>
+
+
+            <li><a href="pemerintahan.html">Pemerintahan</a></li>
+            <li><a href="kelembagaan.html">Kelembagaan</a></li>
+            <li><a href="data-desa.html">Data Desa</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+
+            <!-- GANTI ASPIRASI -->
+            <li><a class="active" href="transparansi-anggaran.html">Transparansi Anggaran</a></li>
+
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN GRID -->
+    <div class="main">
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="side-left">
+            <div class="side-card">
+                <img src="img/logo.png" class="side-logo">
+                <h3>PEMERINTAH DESA</h3>
+                <p>Nama Kecamatan</p>
+                <p>Nama Kabupaten</p>
+            </div>
+
+            <div class="menu-button">
+                <button onclick="location.href='index.html'">🏠 Beranda</button>
+                <button onclick="location.href='profil.html'">📄 Profil Desa</button>
+                <button onclick="location.href='pemerintahan.html'">👥 Pemerintahan</button>
+                <button onclick="location.href='data-desa.html'">📊 Data Desa</button>
+                <button onclick="location.href='berita.html'">📰 Berita</button>
+                <button onclick="location.href='galeri.html'">🖼️ Galeri</button>
+                <button onclick="location.href='transparansi-anggaran.html'">💰 Transparansi Anggaran</button>
+            </div>
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <section class="content">
+            <h2>Transparansi Anggaran Desa</h2>
+            <p>
+                Halaman ini menampilkan infografis APBDes, realisasi anggaran, dan laporan
+                penggunaan dana desa.  
+                Untuk memperbarui, cukup ganti atau tambahkan gambar ke folder <b>img/anggaran</b>.
+            </p>
+
+            <h3 class="sub-title-profil">Infografis Anggaran Desa</h3>
+
+
+            <!-- GRID FOTO ANGGARAN -->
+            <div class="gallery-grid">
+                <img src="img/anggaran/apbdes-1.jpg" onclick="openImage(this.src)">
+                <img src="img/anggaran/apbdes-2.jpg" onclick="openImage(this.src)">
+                <img src="img/anggaran/apbdes-3.jpg" onclick="openImage(this.src)">
+
+                <img src="img/anggaran/realisasi-1.jpg" onclick="openImage(this.src)">
+                <img src="img/anggaran/realisasi-2.jpg" onclick="openImage(this.src)">
+                <img src="img/anggaran/realisasi-3.jpg" onclick="openImage(this.src)">
+            </div>
+
+        </section>
+
+        <!-- SIDEBAR KANAN -->
+        <aside class="side-right">
+            <h3 class="jam-title">Jam Kerja</h3>
+            <table class="jam-table">
+                <tr><td>Senin</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Selasa</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Rabu</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Kamis</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Jumat</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Sabtu</td><td colspan="2" class="libur">LIBUR</td></tr>
+                <tr><td>Minggu</td><td colspan="2" class="libur">LIBUR</td></tr>
+            </table>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Pemerintah Desa NAMA DESA</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+        <img id="lightbox-img">
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

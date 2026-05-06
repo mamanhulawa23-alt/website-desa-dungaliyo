@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemerintahan Desa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <span id="tanggal"></span>
+
+            <div class="topbar-menu">
+                <input type="text" placeholder="Cari artikel..." class="search-input">
+                <span class="icon">🔍</span>
+                <span class="icon">🏠</span>
+                <span class="icon">👤</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="polygon-bg"></div>
+
+        <div class="container header-flex">
+            <img src="img/logo.png" class="logo">
+            <div class="header-title">
+                <h1>DESA NAMA DESA</h1>
+                <p>Kecamatan X • Kabupaten Y • Provinsi Z</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="profil.html">Profil</a></li>
+
+
+            <li><a class="active" href="pemerintahan.html">Pemerintahan</a></li>
+            <li><a href="kelembagaan.html">Kelembagaan</a></li>
+            <li><a href="data-desa.html">Data Desa</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="transparansi anggaran.html">transparansi-anggaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- GRID UTAMA -->
+    <div class="main">
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="side-left">
+            <div class="side-card">
+                <img src="img/logo.png" class="side-logo">
+                <h3>PEMERINTAH DESA</h3>
+                <p>Nama Kecamatan</p>
+                <p>Nama Kabupaten</p>
+            </div>
+
+            <div class="menu-button">
+                <button onclick="location.href='index.html'">🏠 Beranda</button>
+                <button onclick="location.href='profil.html'">📄 Profil Desa</button>
+                <button onclick="location.href='pemerintahan.html'">👥 Pemerintahan</button>
+                <button onclick="location.href='data-desa.html'">📊 Data Desa</button>
+                <button onclick="location.href='berita.html'">📰 Berita</button>
+                <button onclick="location.href='galeri.html'">🖼️ Galeri</button>
+            </div>
+        </aside>
+
+        <!-- KONTEN TENGAH – PEMERINTAHAN -->
+        <section class="content">
+            <h2>Struktur Pemerintahan Desa</h2>
+
+            <p>
+                Berikut adalah struktur organisasi Pemerintahan Desa NAMA DESA.
+                Anda dapat mengganti seluruh data sesuai kondisi desa Anda.
+            </p>
+
+            <h3 class="sub-title-profil">Kepala Desa</h3>
+            <table class="profil-table">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>Nama Kepala Desa</td>
+                </tr>
+                <tr>
+                    <td>Masa Jabatan</td>
+                    <td>:</td>
+                    <td>2023 – 2029</td>
+                </tr>
+            </table>
+
+            <h3 class="sub-title-profil">Sekretaris Desa</h3>
+            <table class="profil-table">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>Nama Sekretaris Desa</td>
+                </tr>
+            </table>
+
+            <h3 class="sub-title-profil">Kepala Urusan (KAUR)</h3>
+            <table class="profil-table">
+                <tr><td>KAUR Umum</td><td>:</td><td>Nama KAUR Umum</td></tr>
+                <tr><td>KAUR Perencanaan</td><td>:</td><td>Nama KAUR Perencanaan</td></tr>
+                <tr><td>KAUR Keuangan</td><td>:</td><td>Nama KAUR Keuangan</td></tr>
+            </table>
+
+            <h3 class="sub-title-profil">Kepala Seksi (KASI)</h3>
+            <table class="profil-table">
+                <tr><td>KASI Pemerintahan</td><td>:</td><td>Nama KASI Pemerintahan</td></tr>
+                <tr><td>KASI Kesejahteraan</td><td>:</td><td>Nama KASI Kesejahteraan</td></tr>
+                <tr><td>KASI Pelayanan</td><td>:</td><td>Nama KASI Pelayanan</td></tr>
+            </table>
+
+            <h3 class="sub-title-profil">Kepala Dusun (KADUS)</h3>
+            <table class="profil-table">
+                <tr><td>Kepala Dusun 1</td><td>:</td><td>Nama Kadus 1</td></tr>
+                <tr><td>Kepala Dusun 2</td><td>:</td><td>Nama Kadus 2</td></tr>
+                <tr><td>Kepala Dusun 3</td><td>:</td><td>Nama Kadus 3</td></tr>
+            </table>
+
+        </section>
+
+        <!-- SIDEBAR KANAN -->
+        <aside class="side-right">
+            <h3 class="jam-title">Jam Kerja</h3>
+
+            <table class="jam-table">
+                <tr><td>Senin</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Selasa</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Rabu</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Kamis</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Jumat</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Sabtu</td><td colspan="2" class="libur">LIBUR</td></tr>
+                <tr><td>Minggu</td><td colspan="2" class="libur">LIBUR</td></tr>
+            </table>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Pemerintah Desa NAMA DESA</p>
+    </footer>
+
+    <!-- WA BUTTON -->
+    <a href="[wa.me](https://wa.me/62xxxxxxxxxx)" class="wa-btn">💬 Bantuan?</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

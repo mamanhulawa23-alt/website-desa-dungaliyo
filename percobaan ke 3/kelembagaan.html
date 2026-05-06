@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelembagaan Desa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <span id="tanggal"></span>
+
+            <div class="topbar-menu">
+                <input type="text" placeholder="Cari artikel..." class="search-input">
+                <span class="icon">🔍</span>
+                <span class="icon">🏠</span>
+                <span class="icon">👤</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="polygon-bg"></div>
+
+        <div class="container header-flex">
+            <img src="img/logo.png" class="logo">
+            <div class="header-title">
+                <h1>DESA NAMA DESA</h1>
+                <p>Kecamatan X • Kabupaten Y • Provinsi Z</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="profil.html">Profil</a></li>
+
+
+            <li><a href="pemerintahan.html">Pemerintahan</a></li>
+            <li><a class="active" href="kelembagaan.html">Kelembagaan</a></li>
+            <li><a href="data-desa.html">Data Desa</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="transparansi anggaran.html">transparansi-anggaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- GRID UTAMA -->
+    <div class="main">
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="side-left">
+            <div class="side-card">
+                <img src="img/logo.png" class="side-logo">
+                <h3>PEMERINTAH DESA</h3>
+                <p>Nama Kecamatan</p>
+                <p>Nama Kabupaten</p>
+            </div>
+
+            <div class="menu-button">
+                <button onclick="location.href='index.html'">🏠 Beranda</button>
+                <button onclick="location.href='profil.html'">📄 Profil Desa</button>
+                <button onclick="location.href='pemerintahan.html'">👥 Pemerintahan</button>
+                <button onclick="location.href='data-desa.html'">📊 Data Desa</button>
+                <button onclick="location.href='berita.html'">📰 Berita</button>
+                <button onclick="location.href='galeri.html'">🖼️ Galeri</button>
+            </div>
+        </aside>
+
+        <!-- KONTEN TENGAH – KELEMBAGAAN -->
+        <section class="content">
+            <h2>Kelembagaan Desa</h2>
+
+            <p>
+                Berikut adalah lembaga-lembaga yang ada di Desa NAMA DESA. Silakan sesuaikan dengan
+                struktur kelembagaan desa Anda.
+            </p>
+
+            <!-- BPD -->
+            <h3 class="sub-title-profil">Badan Permusyawaratan Desa (BPD)</h3>
+            <table class="profil-table">
+                <tr><td>Ketua</td><td>:</td><td>Nama Ketua BPD</td></tr>
+                <tr><td>Wakil Ketua</td><td>:</td><td>Nama Wakil Ketua</td></tr>
+                <tr><td>Sekretaris</td><td>:</td><td>Nama Sekretaris</td></tr>
+                <tr><td>Anggota</td><td>:</td><td>Daftar anggota BPD</td></tr>
+            </table>
+
+            <!-- LPM -->
+            <h3 class="sub-title-profil">Lembaga Pemberdayaan Masyarakat (LPM)</h3>
+            <table class="profil-table">
+                <tr><td>Ketua</td><td>:</td><td>Nama Ketua LPM</td></tr>
+                <tr><td>Sekretaris</td><td>:</td><td>Nama Sekretaris</td></tr>
+                <tr><td>Bendahara</td><td>:</td><td>Nama Bendahara</td></tr>
+                <tr><td>Seksi</td><td>:</td><td>Daftar seksi LPM</td></tr>
+            </table>
+
+            <!-- PKK -->
+            <h3 class="sub-title-profil">PKK Desa</h3>
+            <table class="profil-table">
+                <tr><td>Ketua</td><td>:</td><td>Nama Ketua PKK</td></tr>
+                <tr><td>Wakil Ketua</td><td>:</td><td>Nama Wakil Ketua</td></tr>
+                <tr><td>Sekretaris</td><td>:</td><td>Nama Sekretaris</td></tr>
+                <tr><td>Bendahara</td><td>:</td><td>Nama Bendahara</td></tr>
+                <tr><td>Kelompok Kerja (Pokja)</td><td>:</td><td>Pokja I–IV</td></tr>
+            </table>
+
+            <!-- KARANG TARUNA -->
+            <h3 class="sub-title-profil">Karang Taruna</h3>
+            <table class="profil-table">
+                <tr><td>Ketua</td><td>:</td><td>Nama Ketua Karang Taruna</td></tr>
+                <tr><td>Wakil Ketua</td><td>:</td><td>Nama Wakil Ketua</td></tr>
+                <tr><td>Sekretaris</td><td>:</td><td>Nama Sekretaris</td></tr>
+                <tr><td>Bendahara</td><td>:</td><td>Nama Bendahara</td></tr>
+            </table>
+
+            <!-- LINMAS -->
+            <h3 class="sub-title-profil">Linmas</h3>
+            <table class="profil-table">
+                <tr><td>Komandan Linmas</td><td>:</td><td>Nama Komandan</td></tr>
+                <tr><td>Anggota</td><td>:</td><td>Daftar anggota Linmas</td></tr>
+            </table>
+
+            <!-- LKD (opsional) -->
+            <h3 class="sub-title-profil">Lembaga Kemasyarakatan Desa (LKD)</h3>
+            <p>Berisi daftar lembaga lain yang ada di desa seperti RT/RW, Posyandu, Kader Kesehatan, dll.</p>
+
+        </section>
+
+        <!-- SIDEBAR KANAN -->
+        <aside class="side-right">
+            <h3 class="jam-title">Jam Kerja</h3>
+
+            <table class="jam-table">
+                <tr><td>Senin</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Selasa</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Rabu</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Kamis</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Jumat</td><td>08:00</td><td>16:00</td></tr>
+                <tr><td>Sabtu</td><td colspan="2" class="libur">LIBUR</td></tr>
+                <tr><td>Minggu</td><td colspan="2" class="libur">LIBUR</td></tr>
+            </table>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Pemerintah Desa NAMA DESA</p>
+    </footer>
+
+    <!-- WA BUTTON -->
+    <a href="[wa.me](https://wa.me/62xxxxxxxx)" class="wa-btn">💬 Bantuan?</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
